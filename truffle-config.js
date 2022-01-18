@@ -1,8 +1,8 @@
 const HDWalletProvider = require('truffle-hdwallet-provider');
-const infuraKey = "https://rinkeby.infura.io/v3/97ee85bccccf4161b5273c37acc68988";
+const infuraKey = "infuraKey";
 //
 // const fs = require('fs');
-const mnemonic = "olive climb ski fog picture dish seven swap tortoise tray attract large";
+const mnemonic = "mnemonic";
 /*
 * To deploy via Infura you'll need a wallet provider (like truffle-hdwallet-provider)
  * to sign your transactions before they're sent to a remote public node. Infura API
@@ -23,7 +23,7 @@ module.exports = {
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
     rinkeby: {
-      provider: () => new HDWalletProvider(mnemonic, `https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161`),
+      provider: () => new HDWalletProvider(mnemonic, `Metamask-Key`),
         network_id: 4,       // rinkeby's id
         gas: 4500000,        // rinkeby has a lower block limit than mainnet
         gasPrice: 10000000000
